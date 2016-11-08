@@ -1,6 +1,6 @@
 # Tumblr
 
-JUST FOR A CHECKMARK FOR NOW. WILL POLISH AND COPLETE OTIONALS TOMORROW.
+JUST FOR A CHECKMARK FOR NOW. WILL POLISH AND COMPLETE OPTIONALS TOMORROW.
 (CRASHES AFTER CALLING LOGIN SCREEN :()
 <a href="http://imgur.com/qMyYQHm"><img src="http://i.imgur.com/qMyYQHm.gif" title="source: imgur.com" /></a>
 
