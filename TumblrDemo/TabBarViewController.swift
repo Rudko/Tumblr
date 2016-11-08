@@ -42,7 +42,10 @@ class TabBarViewController: UIViewController {
     
     
     @IBAction func didPressTab(_ sender: UIButton) {
+        
         let previousIndex = selectedIndex
+        selectedIndex = sender.tag
+
         buttons[previousIndex].isSelected = false
         let previousVC = viewControllers[previousIndex]
 
