@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C32f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ld4-Eb-ZO0">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="bMN-s7-mSv">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="x2Z-IV-1Sj" customClass="HomeViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kil-nz-r5j"/>
+                        <viewControllerLayoutGuide type="bottom" id="XtE-Qf-bld"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0n-Cv-14k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-mb-NHB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="home_spinner" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-Rx-YwH">
+                                <rect key="frame" x="87" y="164" width="146" height="146"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="home_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="AAM-6r-QQQ">
+                                <rect key="frame" x="0.0" y="271" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL3-rB-bfp">
+                                <rect key="frame" x="255" y="24" width="58" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="naC-3D-NsZ" kind="presentation" id="nyn-Ba-cXp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKq-dX-H1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588.75" y="820.77464788732391"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Cj4-ef-ylQ">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="lHN-Hi-zek" customClass="SearchViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b5x-vf-3Bf"/>
+                        <viewControllerLayoutGuide type="bottom" id="rtc-Az-ZBM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lc9-4i-ros">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="search_feed" translatesAutoresizingMaskIntoConstraints="NO" id="8RJ-Jn-yQn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btW-qS-VcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="821"/>
+        </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="wAq-ki-1uF">
+            <objects>
+                <viewController storyboardIdentifier="ComposeViewController" modalPresentationStyle="overCurrentContext" id="IPe-eN-9Gc" customClass="ComposeViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qud-4D-tl1"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ha-oc-AHX"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="4xn-oT-mGO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA5-fw-hHf">
+                                <rect key="frame" x="123" y="680" width="75" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chat_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-95-7Dz">
+                                <rect key="frame" x="220" y="570" width="75" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="quote_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fL-Sm-2Nn">
+                                <rect key="frame" x="26" y="680" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="link_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85r-hz-KdK">
+                                <rect key="frame" x="123" y="570" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="photo_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goP-Qh-Hc7">
+                                <rect key="frame" x="220" y="680" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="video_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1r-Go-WFz">
+                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nevermind"/>
+                                <connections>
+                                    <action selector="didPressNevermind:" destination="IPe-eN-9Gc" eventType="touchUpInside" id="FjX-2l-lsl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbN-i5-zHn">
+                                <rect key="frame" x="26" y="570" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="text_icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19867190718650818" green="0.27309811115264893" blue="0.35276114940643311" alpha="0.8048480308219178" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatButton" destination="YA5-fw-hHf" id="4CZ-8Q-OQs"/>
+                        <outlet property="linkButton" destination="7fL-Sm-2Nn" id="x3s-Ut-0dg"/>
+                        <outlet property="photoButton" destination="85r-hz-KdK" id="11b-ha-5TA"/>
+                        <outlet property="quoteButton" destination="c9V-95-7Dz" id="KfM-yD-P05"/>
+                        <outlet property="textButton" destination="bbN-i5-zHn" id="ASz-bp-lSs"/>
+                        <outlet property="videoButton" destination="goP-Qh-Hc7" id="02V-78-vQW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4l-RP-RIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="821"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="apo-dU-qWG">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" id="oNH-jO-y8q" customClass="AccountViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l35-0q-4iy"/>
+                        <viewControllerLayoutGuide type="bottom" id="N8k-vv-Mxr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ok0-DA-jbU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="ZsC-mn-7FH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nq-Eh-hMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="821"/>
+        </scene>
+        <!--Trending View Controller-->
+        <scene sceneID="C3z-Cn-jaY">
+            <objects>
+                <viewController storyboardIdentifier="TrendingViewController" id="eUG-yB-dgD" customClass="TrendingViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rJd-up-eH7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8pR-W6-nxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRk-8D-qDz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1217"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-2n-Fqd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1217"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="trending_feed" translatesAutoresizingMaskIntoConstraints="NO" id="1TP-hs-sZG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1217"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1217"/>
+                    <connections>
+                        <outlet property="feedView" destination="1TP-hs-sZG" id="obj-V6-Rvo"/>
+                        <outlet property="scrollView" destination="BpZ-2n-Fqd" id="K6T-Hi-fRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jf-aZ-GQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="1164"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="xE4-2s-NoY">
+            <objects>
+                <viewController id="ld4-Eb-ZO0" customClass="TabBarViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GN3-Dh-iDw"/>
+                        <viewControllerLayoutGuide type="bottom" id="mTk-Z2-RE9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O0z-SC-KS1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-QP-oom">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pv-w9-XhD">
+                                        <rect key="frame" x="135" y="5" width="50" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="compose_button"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="ld4-Eb-ZO0" eventType="touchUpInside" id="D5z-AS-n4A"/>
+                                            <segue destination="IPe-eN-9Gc" kind="presentation" id="h1i-rE-2Pv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ma-kZ-XbX">
+                                        <rect key="frame" x="210" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="account_icon"/>
+                                        <state key="selected" image="account_selected_icon"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="ld4-Eb-ZO0" eventType="touchUpInside" id="Reg-R5-JLb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-UI-NWv">
+                                        <rect key="frame" x="270" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="trending_icon"/>
+                                        <state key="selected" image="trending_selected_icon"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="ld4-Eb-ZO0" eventType="touchUpInside" id="sZ1-Ji-enR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdt-e8-vZC">
+                                        <rect key="frame" x="75" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="search_icon"/>
+                                        <state key="selected" image="search_selected_icon"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="ld4-Eb-ZO0" eventType="touchUpInside" id="9FG-ZJ-gNS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hws-hL-oT8">
+                                        <rect key="frame" x="15" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="home_icon"/>
+                                        <state key="selected" image="home_selected_icon"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="ld4-Eb-ZO0" eventType="touchUpInside" id="7Vv-lo-hbn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19031140208244324" green="0.26120918989181519" blue="0.33725395798683167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-PR-bHx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="DNB-PR-bHx" id="ZDl-ha-Emh"/>
+                        <outletCollection property="buttons" destination="hws-hL-oT8" collectionClass="NSMutableArray" id="axa-MV-jcv"/>
+                        <outletCollection property="buttons" destination="Zdt-e8-vZC" collectionClass="NSMutableArray" id="A3M-kg-n5p"/>
+                        <outletCollection property="buttons" destination="1pv-w9-XhD" collectionClass="NSMutableArray" id="POV-1d-vXz"/>
+                        <outletCollection property="buttons" destination="0ma-kZ-XbX" collectionClass="NSMutableArray" id="dlN-u5-pxq"/>
+                        <outletCollection property="buttons" destination="Nse-UI-NWv" collectionClass="NSMutableArray" id="Lfu-dN-enf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KZ-6A-Wn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172.5" y="134.1549295774648"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="aPe-H2-Mxe">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" modalPresentationStyle="overCurrentContext" id="naC-3D-NsZ" customClass="LogInViewController" customModule="TumblrDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SoR-h1-xNg"/>
+                        <viewControllerLayoutGuide type="bottom" id="tkb-l1-TK4"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.94999998807907104" contentMode="scaleToFill" id="7wk-Nr-2Qe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qat-83-jch">
+                                <rect key="frame" x="123" y="680" width="75" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chat_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odR-fn-0RX">
+                                <rect key="frame" x="220" y="570" width="75" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="quote_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="131-40-hm1">
+                                <rect key="frame" x="26" y="680" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="link_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf2-Bl-WKh">
+                                <rect key="frame" x="123" y="570" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="photo_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz4-oc-ars">
+                                <rect key="frame" x="220" y="680" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="video_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4E-VQ-dQn">
+                                <rect key="frame" x="26" y="570" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="text_icon"/>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="login_form" translatesAutoresizingMaskIntoConstraints="NO" id="Ox1-h8-80N">
+                                <rect key="frame" x="10" y="121" width="300" height="132"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPM-yv-HpE">
+                                <rect key="frame" x="10" y="128" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1986719072" green="0.27309811119999999" blue="0.35276114939999997" alpha="0.8048480308" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatButton" destination="qat-83-jch" id="Ata-Ot-Oue"/>
+                        <outlet property="linkButton" destination="131-40-hm1" id="zB5-Ep-x9M"/>
+                        <outlet property="logInForm" destination="Ox1-h8-80N" id="f82-cj-4SR"/>
+                        <outlet property="photoButton" destination="cf2-Bl-WKh" id="Wb5-wH-b6X"/>
+                        <outlet property="quoteButton" destination="odR-fn-0RX" id="86W-mu-jT8"/>
+                        <outlet property="textButton" destination="J4E-VQ-dQn" id="99T-U4-XnU"/>
+                        <outlet property="videoButton" destination="gz4-oc-ars" id="jjV-BS-Iik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDz-DK-vj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588.75" y="1714.4366197183099"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account" width="320" height="524"/>
+        <image name="account_icon" width="35" height="35"/>
+        <image name="account_selected_icon" width="35" height="35"/>
+        <image name="chat_icon" width="75" height="96"/>
+        <image name="compose_button" width="50" height="35"/>
+        <image name="home" width="320" height="524"/>
+        <image name="home_icon" width="35" height="35"/>
+        <image name="home_overlay" width="320" height="100"/>
+        <image name="home_selected_icon" width="35" height="35"/>
+        <image name="home_spinner" width="146" height="146"/>
+        <image name="link_icon" width="75" height="95"/>
+        <image name="login_form" width="300" height="132"/>
+        <image name="nevermind" width="320" height="53"/>
+        <image name="photo_icon" width="75" height="95"/>
+        <image name="quote_icon" width="75" height="96"/>
+        <image name="search_feed" width="320" height="524"/>
+        <image name="search_icon" width="35" height="35"/>
+        <image name="search_selected_icon" width="35" height="35"/>
+        <image name="text_icon" width="75" height="95"/>
+        <image name="trending_feed" width="320" height="1217"/>
+        <image name="trending_icon" width="35" height="35"/>
+        <image name="trending_selected_icon" width="35" height="35"/>
+        <image name="video_icon" width="75" height="95"/>
+    </resources>
+</document>
