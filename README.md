@@ -1,23 +1,15 @@
-# Tumblr
-
-JUST FOR A CHECKMARK FOR NOW. WILL POLISH AND COMPLETE OPTIONALS TOMORROW.
-CRASHES AFTER CALLING LOGIN SCREEN :(  
-
-<a href="http://imgur.com/qMyYQHm"><img src="http://i.imgur.com/qMyYQHm.gif" title="source: imgur.com" /></a>
-
-
 ## Tumblr
 
 The purpose of this homework is to leverage animations and gestures to create custom navigation. We're going to use the techniques from this week to implement some interactions in Tumblr.
 
-Time spent: `<Number of hours spent>`
+Time spent: too many hours
 
 ### Features
 
 #### Required
 
-- [ ] Tapping on Home, Search, Account, or Trending should show the respective screen and highlight the tab bar button.
-- [ ] Compose button should modally present the compose screen.
+- [V] Tapping on Home, Search, Account, or Trending should show the respective screen and highlight the tab bar button.
+- [V] Compose button should modally present the compose screen.
 
 #### Optional
 
@@ -38,9 +30,8 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href="http://imgur.com/KckNLh5"><img src="http://i.imgur.com/KckNLh5.gif" title="source: imgur.com" /></a>
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
